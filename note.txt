@@ -1,0 +1,5 @@
+1. google the stack
+2. make website on react --typescript 
+3. make api on nodejs 
+
+
