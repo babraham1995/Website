@@ -1,0 +1,11 @@
+todo:
+1. google the stack
+2. make website on react --typescript 
+3. make api on nodejs 
+
+future features 
+1. jwt authorization
+2.
+3.caching ??
+
+notes:
