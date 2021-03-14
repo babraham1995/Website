@@ -8,4 +8,10 @@ future features
 2.
 3.caching ??
 
+questions:
+1. database server - is it stored on mongodb server? if this is the local one mongodb://localhost:27017/easy-notes
+then do i have to create a new db running on a server?
+2. what do large websites and smaller independent ones do to host their website? gcp?
 notes:
+
+https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/
