@@ -1,0 +1,35 @@
+Purpose:
+1) Use work skills, learn about Spring from documentation etc and eventually LDAP/AMQP/OAUTH/
+2) Write good tests, implement utils etc from work
+3) Actually code, use documentation/google/research to add things, try stuff out
+4) FrontEnd will be barebones and doesn't matter too much
+
+Todo:
+
+1) add get/post/update/delete for to do to a postgreql database
+2) make many to many relationships for user, project, todo
+
+1) build spring project from scratch with minimal copy paste, look at documentation when needed
+1a) postgreql database setup, spring repository
+1b) things to research: beans, database relationships/models/config, annotations, utils, testing stuff
+2) use previous react
+3) Get/Post/Delete/Update backend working and connected to persistent DB
+
+5)functionality -> users that has projects that have todos
+6) write tests, add utils, 
+7) take example project resilience, lombok, spring-parent from work
+---------
+
+6) See what implementations I can use for LDAP/Rabbitmq/Oauth
+
+
+Overview
+
+1. User logs in adds many projects that contain many todos
+2. User is stored either in session or in cookie
+3. login/register
+4. get/add/delete/update for user, projects, todos
+
+4a. postgresql implemented somehow
+
+5. frontend is react or next.js from benawad project

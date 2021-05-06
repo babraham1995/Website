@@ -1,0 +1,1 @@
+let lucka: string = "hi";

@@ -3,15 +3,51 @@ todo:
 2. make website on react --typescript 
 3. make api on nodejs 
 
-future features 
-1. jwt authorization
-2.
-3.caching ??
-
 questions:
 1. database server - is it stored on mongodb server? if this is the local one mongodb://localhost:27017/easy-notes
 then do i have to create a new db running on a server?
 2. what do large websites and smaller independent ones do to host their website? gcp?
+
+future features 
+1. jwt authorization
+2.
+3.caching ??
+4. CRONJOB BACKUP FOR AWS BACKEND
+4. vultr frontend, mlab cheaper alternatives -> dokku (database addons), (),
+5. netlfi host static frontend
+6. imgix+googlecloud/cloudinary saving resizeable cached images
+7. serverless backend for contact page that emails me
+
+
 notes:
 
+gpt-3 code generator
+aws lambda
+
+SWAGGERHUB code generator from docs
+https://fireship.io/courses/react-next-firebase/
+react snippet library, bookmarks addon
+joshtronic hosting benchmarkcomparison, vpsbenchmarks.com
+
+
+docker build -t react-app ./
+
+docker run -p 8080:8080 react-app
+
+docker build -t gcr.io/medium-react-gcr/react-app ./
+
+gcloud auth configure-docker
+
+docker push gcr.io/medium-react-gcr/react-app
+
 https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/
+
+https://medium.com/swlh/deploying-a-react-app-to-google-cloud-run-with-github-actions-ae24ac6cb85a
+
+https://cloud.google.com/community/tutorials/compute-quickstart
+
+https://xiaolishen.medium.com/develop-in-docker-a-node-backend-and-a-react-front-end-talking-to-each-other-5c522156f634
+
+https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app
+
+todo: follow every step from the start to try and deploy a dockerfile
