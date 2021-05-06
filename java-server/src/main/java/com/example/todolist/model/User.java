@@ -3,6 +3,7 @@ package com.example.todolist.model;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.List;
@@ -11,6 +12,8 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
+@Table(name = "user")
+@ToString
 public class User {
 
     @Id
@@ -20,13 +23,13 @@ public class User {
     @OneToMany(mappedBy = "projectId")
     private List<Project> project;
 
-    @Column(nullable = false)
+    @Column()
     private String name;
 
     //serialized, hashed, encrypted?
-    @Column(nullable = false)
+    @Column()
     private String username;
 
-    @Column(nullable = false)
+    @Column()
     private String password;
 }

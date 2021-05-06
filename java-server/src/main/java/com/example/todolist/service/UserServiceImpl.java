@@ -23,7 +23,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public String addUser(User user) {
-        userRepo.save(user);
+        System.out.println("***" + user.toString());
+        Object s = userRepo.save(user);
+        System.out.println("***" + s);
         return "success";
     }
 
