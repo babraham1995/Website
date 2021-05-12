@@ -1,0 +1,15 @@
+.headerbros {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.left{
+  flex-basis:50%; 
+  margin-left: 20px;
+}
+
+.right{
+  flex-basis:50%; 
+  text-align: right;
+  margin-right: 20px;
+}
