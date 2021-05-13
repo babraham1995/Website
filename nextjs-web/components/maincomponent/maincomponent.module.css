@@ -1,5 +1,7 @@
 .maincomponent{
     padding: 60px;
+    overflow-y: auto;
+    height: 800px;
 }
 
 .todos{

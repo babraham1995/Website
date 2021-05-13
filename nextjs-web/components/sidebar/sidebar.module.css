@@ -69,12 +69,15 @@
   } */
 .sidebar{
     padding: 20px;
-    overflow-y: scroll;
     top: 0;
     bottom: 0;
+    overflow-y: auto;
+    height: 900px;
+    /* overflow-y: hidden; */
 }
   
 .project{
     font-size: 30px;
     font: bold;
 }
+

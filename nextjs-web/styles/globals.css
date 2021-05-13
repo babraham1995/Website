@@ -40,6 +40,10 @@ img {
   border:1px solid black;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* p {
   display:inline;
 } */
