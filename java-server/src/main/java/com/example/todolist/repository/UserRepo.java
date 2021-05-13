@@ -1,12 +1,15 @@
 package com.example.todolist.repository;
 
-import com.example.todolist.model.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.io.Serializable;
+import java.util.Optional;
 
-public interface UserRepo <T, ID extends Serializable>
-        extends CrudRepository<T, ID> {
+public interface UserRepo <User, ID extends Serializable>
+        extends CrudRepository<User, ID> {
+
+        Optional<User> findById(ID primaryKey);
+
 
 //    <S extends T> S save(S entity);
 //
