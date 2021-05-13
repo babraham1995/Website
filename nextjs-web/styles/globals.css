@@ -34,12 +34,10 @@ img {
   /* flex: 2 1 auto; */
   flex-basis:20%; 
   border:1px solid black;
-  height: 600px
 }
 .col2 {
   flex-basis:80%; 
   border:1px solid black;
-  height: 600px
 }
 
 /* p {

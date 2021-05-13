@@ -69,6 +69,9 @@
   } */
 .sidebar{
     padding: 20px;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
 }
   
 .project{

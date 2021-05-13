@@ -43,6 +43,23 @@ export default function SideBar({ children, home }) {
          <p>Notes</p>
          <p>Todos</p>
          <p>Reminders</p>
+         <p>Shopping List</p>
+         <p>Ideas</p>
+         <p>Notes</p>
+         <p>Todos</p>
+         <p>Reminders</p>
+         <p>Reminders</p>
+         <p>Shopping List</p>
+         <p>Ideas</p>
+         <p>Notes</p>
+         <p>Todos</p>
+         <p>Reminders</p>
+         <p>Reminders</p>
+         <p>Shopping List</p>
+         <p>Ideas</p>
+         <p>Notes</p>
+         <p>Todos</p>
+         <p>Reminders</p>
        </div>
     </>
   );
