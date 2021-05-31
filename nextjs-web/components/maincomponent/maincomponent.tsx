@@ -9,7 +9,7 @@ import { compose } from 'recompose';
 import React from 'react';
 // export default function MainComponent({ children, home }) {
 
-  const MainComponent= (props) => {
+  const Todo= (props) => {
     const {
       item,
       data,
@@ -17,6 +17,7 @@ import React from 'react';
       addTodo,
       deleteTodo,
     } = props;
+
 
     return (
       <React.Fragment>
@@ -39,34 +40,6 @@ import React from 'react';
                     Milk 
                   <Paper >description</Paper>
                 </Grid>
-                <Grid item xs={12}>
-                    Egg 
-                  <Paper >description</Paper>
-                </Grid>
-                <Grid item xs={12}>
-                    Egg 
-                  <Paper >description</Paper>
-                </Grid>
-                <Grid item xs={12}>
-                    Milk 
-                  <Paper >description</Paper>
-                </Grid>
-                <Grid item xs={12}>
-                    Egg 
-                  <Paper >description</Paper>
-                </Grid>
-                <Grid item xs={12}>
-                    Egg 
-                  <Paper >description</Paper>
-                </Grid>
-                <Grid item xs={12}>
-                    Milk 
-                  <Paper >description</Paper>
-                </Grid>
-                <Grid item xs={12}>
-                    Egg 
-                  <Paper >description</Paper>
-                </Grid>
                 
               </Grid>
         
@@ -75,7 +48,7 @@ import React from 'react';
       <form onSubmit={(e) => {
         e.preventDefault();
         addTodo({
-          value: item.value,
+          value: props.item.value,
         });
       }}>
         <input
@@ -109,4 +82,4 @@ import React from 'react';
 
         )};
 
-        export default compose()(MainComponent);
+        export default compose()(Todo);
