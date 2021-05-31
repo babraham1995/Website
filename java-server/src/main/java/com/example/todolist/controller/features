@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+
+Error handler :
+
 @ControllerAdvice
 class EmployeeNotFoundAdvice {
 
@@ -16,3 +19,4 @@ class EmployeeNotFoundAdvice {
     return ex.getMessage();
   }
 }
+

@@ -4,11 +4,15 @@ import com.example.todolist.model.Account;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
-public interface UserRepo extends CrudRepository<Account, Integer> {
+public interface TodoRepo extends CrudRepository<Account, Integer> {
+
+            Optional<Account> findByAccountId(int id);
+
 }
 
-//        Optional<User> findById(ID primaryKey);
 
 
 //    <S extends T> S save(S entity);

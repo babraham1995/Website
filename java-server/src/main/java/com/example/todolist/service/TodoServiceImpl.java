@@ -1,22 +1,24 @@
 package com.example.todolist.service;
 
 import com.example.todolist.model.Account;
-import com.example.todolist.repository.UserRepo;
+import com.example.todolist.repository.TodoRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class TodoServiceImpl implements TodoService {
 
     @Autowired
-    UserRepo userRepo;
+    TodoRepo userRepo;
 
 
     @Override
     public Optional<Account> getUser() {
-        return userRepo.findById(1);
+        Optional<Account> s = userRepo.findByAccountId(1);
+        System.out.println(s);
+        return s;
 
     }
 
