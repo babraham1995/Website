@@ -43,11 +43,35 @@ import React from 'react';
                     Egg 
                   <Paper >description</Paper>
                 </Grid>
+                <Grid item xs={12}>
+                    Egg 
+                  <Paper >description</Paper>
+                </Grid>
+                <Grid item xs={12}>
+                    Milk 
+                  <Paper >description</Paper>
+                </Grid>
+                <Grid item xs={12}>
+                    Egg 
+                  <Paper >description</Paper>
+                </Grid>
+                <Grid item xs={12}>
+                    Egg 
+                  <Paper >description</Paper>
+                </Grid>
+                <Grid item xs={12}>
+                    Milk 
+                  <Paper >description</Paper>
+                </Grid>
+                <Grid item xs={12}>
+                    Egg 
+                  <Paper >description</Paper>
+                </Grid>
                 
               </Grid>
         
         </Container> 
-        <h1>TODO</h1>
+        {/* <h1>TODO</h1>
       <form onSubmit={(e) => {
         e.preventDefault();
         addTodo({
@@ -79,7 +103,7 @@ import React from 'react';
             DELETE
           </button>
         </p>
-      ))}
+      ))} */}
         </div>
       </React.Fragment>
 

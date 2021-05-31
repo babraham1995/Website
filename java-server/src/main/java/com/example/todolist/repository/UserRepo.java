@@ -1,14 +1,14 @@
 package com.example.todolist.repository;
 
+import com.example.todolist.model.Account;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-import java.io.Serializable;
-import java.util.Optional;
+@Repository
+public interface UserRepo extends CrudRepository<Account, Integer> {
+}
 
-public interface UserRepo <User, ID extends Serializable>
-        extends CrudRepository<User, ID> {
-
-        Optional<User> findById(ID primaryKey);
+//        Optional<User> findById(ID primaryKey);
 
 
 //    <S extends T> S save(S entity);
@@ -34,5 +34,4 @@ public interface UserRepo <User, ID extends Serializable>
 //    void insertUser(User user);
 //
 //    void updateUser(User user);
-}
 

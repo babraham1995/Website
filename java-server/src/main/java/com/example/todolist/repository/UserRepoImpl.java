@@ -1,10 +1,8 @@
 //package com.example.todolist.repository;
 //
-//import com.example.todolist.model.User;
 //import lombok.ToString;
 //import org.springframework.stereotype.Repository;
 //
-//import javax.persistence.EntityManager;
 //import java.io.Serializable;
 //import java.util.Optional;
 //
@@ -12,6 +10,11 @@
 //@ToString
 //public class UserRepoImpl implements UserRepo{
 //
+////    private UserRepo userRepo;
+////
+////    public UserRepoImpl(UserRepo userRepo) {
+////        this.userRepo = userRepo;
+////    }
 //
 //    @Override
 //    public Object save(Object o) {

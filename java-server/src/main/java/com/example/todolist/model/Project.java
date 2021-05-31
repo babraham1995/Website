@@ -15,17 +15,16 @@ import java.util.List;
 public class Project {
 
     @Id
-    @GeneratedValue
-    private int projectId;
-
-    @Column()
-    @OneToMany(mappedBy = "taskId")
-    private List<Task> task;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long projectId;
 
     @Column()
     private String projectName;
 
-    @ManyToOne
-    @JoinColumn(name="user_id")
-    private User user;
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "project")
+    private List<Task> task;
+
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name="account_id", referencedColumnName = "accountId")
+    private Account account;
 }
