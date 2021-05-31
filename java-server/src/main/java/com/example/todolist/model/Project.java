@@ -1,8 +1,11 @@
 package com.example.todolist.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import java.util.List;
@@ -15,11 +18,10 @@ import java.util.List;
 public class Project {
 
     @Id
-    @GeneratedValue
-    private int projectId;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long projectId;
 
-    @Column()
-    @OneToMany(mappedBy = "taskId")
+    @OneToMany(mappedBy = "project")
     private List<Task> task;
 
     @Column()
@@ -27,5 +29,5 @@ public class Project {
 
     @ManyToOne
     @JoinColumn(name="user_id")
-    private User user;
+    private Userb userb;
 }

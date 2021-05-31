@@ -1,1 +1,1 @@
-insert into employee(userId, name , username,password) values('1','Jack','jackusername','jackpassword');
+insert into todo(userId, name , username,password) values('1','Jack','jackusername','jackpassword');

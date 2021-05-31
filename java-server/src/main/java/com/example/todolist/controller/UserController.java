@@ -1,7 +1,7 @@
 package com.example.todolist.controller;
 
 
-import com.example.todolist.model.User;
+import com.example.todolist.model.Userb;
 import com.example.todolist.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,14 +15,14 @@ public class UserController {
     UserService userService;
 
     @GetMapping("/getUser")
-    public @ResponseBody Optional<User> getUsers() {
+    public @ResponseBody Optional<Userb> getUsers() {
         return userService.getUser();
     }
 
     @PostMapping("/addUser")
-    public String addUsers(@RequestBody User user) {
+    public String addUsers(@RequestBody Userb userb) {
 
-        return userService.addUser(user);
+        return userService.addUser(userb);
     }
 
     // get/post/delete/update users

@@ -1,8 +1,11 @@
 package com.example.todolist.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 
@@ -14,8 +17,8 @@ import javax.persistence.*;
 public class Task {
 
     @Id
-    @GeneratedValue
-    private int taskId;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long taskId;
 
     @Column()
     private String title;
@@ -27,7 +30,7 @@ public class Task {
     private boolean checked;
 
     @ManyToOne
-    @JoinColumn(name="project_id")
+    @JoinColumn(name="project")
     private Project project;
 
 }
