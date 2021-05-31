@@ -1,10 +1,10 @@
 package com.example.todolist.service;
 
-import com.example.todolist.model.Userb;
+import com.example.todolist.model.Account;
 
 import java.util.Optional;
 
 public interface UserService {
-    Optional<Userb> getUser();
-    String addUser(Userb userb);
+    Optional<Account> getUser();
+    String addUser(Account account);
 }

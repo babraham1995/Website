@@ -7,7 +7,7 @@ Purpose:
 Todo:
 
 1) add get/post/update/delete for to do to a postgreql database
-2) make many to many relationships for userb, project, todo
+2) make many to many relationships for account, project, todo
 
 1) build spring project from scratch with minimal copy paste, look at documentation when needed
 1a) postgreql database setup, spring repository
@@ -28,7 +28,7 @@ Overview
 1. User logs in adds many projects that contain many todos
 2. User is stored either in session or in cookie
 3. login/register
-4. get/add/delete/update for userb, projects, todos
+4. get/add/delete/update for account, projects, todos
 
 4a. postgresql implemented somehow
 
@@ -36,3 +36,17 @@ Overview
 
 netstat -ano | findstr :8080
 taskkill /PID 8004 /F
+
+{
+    "name": "80",
+    "username": "80",
+    "password": "80",
+    "project": {
+        "projectname": "80",
+        "task": {
+            "title": "80",
+            "content": "80",
+            "checked": true
+        }
+    }
+}

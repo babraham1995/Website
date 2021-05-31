@@ -12,15 +12,15 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "userb")
+@Table(name = "account")
 @ToString
-public class Userb {
+public class Account {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long userId;
+    private Long accountId;
 
-    @OneToMany(mappedBy = "userb")
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "account")
     private List<Project> project;
 
     @Column()

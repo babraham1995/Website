@@ -29,8 +29,8 @@ public class Task {
     @Column()
     private boolean checked;
 
-    @ManyToOne
-    @JoinColumn(name="project")
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name="project_id", referencedColumnName = "projectId")
     private Project project;
 
 }

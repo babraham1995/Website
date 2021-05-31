@@ -1,11 +1,11 @@
 package com.example.todolist.repository;
 
-import com.example.todolist.model.Userb;
+import com.example.todolist.model.Account;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepo extends CrudRepository<Userb, Integer> {
+public interface UserRepo extends CrudRepository<Account, Integer> {
 }
 
 //        Optional<User> findById(ID primaryKey);

@@ -1,6 +1,6 @@
 package com.example.todolist.service;
 
-import com.example.todolist.model.Userb;
+import com.example.todolist.model.Account;
 import com.example.todolist.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,15 +15,15 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public Optional<Userb> getUser() {
+    public Optional<Account> getUser() {
         return userRepo.findById(1);
 
     }
 
     @Override
-    public String addUser(Userb userb) {
-        System.out.println("***s" + userb.toString());
-        Userb s = userRepo.save(userb);
+    public String addUser(Account account) {
+        System.out.println("***s" + account.toString());
+        Account s = userRepo.save(account);
         System.out.println("***" + s.toString());
         return "success";
     }
