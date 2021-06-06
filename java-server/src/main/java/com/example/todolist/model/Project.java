@@ -1,9 +1,6 @@
 package com.example.todolist.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -12,12 +9,13 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Embeddable
+@Data
 @Table(name = "project")
 public class Project {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int projectId;
+    private Long projectId;
 
     @Column()
     private String projectName;
@@ -30,35 +28,5 @@ public class Project {
     @JoinColumn(name="account_id", referencedColumnName = "accountId")
     private Account account;
 
-    public int getProjectId() {
-        return projectId;
-    }
 
-    public void setProjectId(int projectId) {
-        this.projectId = projectId;
-    }
-
-    public String getProjectName() {
-        return projectName;
-    }
-
-    public void setProjectName(String projectName) {
-        this.projectName = projectName;
-    }
-
-    public List<Task> getTask() {
-        return task;
-    }
-
-    public void setTask(List<Task> task) {
-        this.task = task;
-    }
-
-    public Account getAccount() {
-        return account;
-    }
-
-    public void setAccount(Account account) {
-        this.account = account;
-    }
 }
